@@ -23,8 +23,9 @@ app.use(express.static(path.join(__dirname,'./client/build')));
 //     res.send("first api");
 
 // })
+// C:\Users\harsh\OneDrive\Desktop\js revison\Bankapi\client\build\index.html
 app.use("*",function(req,res){
-    res.sendFile(path.join(__dirname,'./client/build/index.html'));
+    res.sendFile(path.join(__dirname,'./Bankapi/client/build/index.html'));
 })
 // default route for user login and register 
 app.use("/user",require("./routes/router"));
