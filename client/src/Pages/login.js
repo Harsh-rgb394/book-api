@@ -37,6 +37,10 @@ const Login = () => {
     }
     
   }
+
+  const handledirect=()=>{
+    Navigate("/regsiter");
+  }
   return (
     <div className="flex items-center justify-center h-screen">
     <div className="bg-white p-8 rounded shadow-md w-80">
@@ -65,6 +69,14 @@ const Login = () => {
           />
         </div>
         
+        {/* <button
+          type="button"
+          onClick={handleSubmit}
+          className=" bg-green-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+        >
+          Sign In
+        </button> */}
+         <div className='flex flex-row justify-between'>
         <button
           type="button"
           onClick={handleSubmit}
@@ -72,6 +84,14 @@ const Login = () => {
         >
           Sign In
         </button>
+        <button
+          type="button"
+          onClick={handledirect}
+          className=" bg-green-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+        >
+          Sign Up
+        </button>
+        </div>
         {/* <Link
         
           // onClick={handleSubmit}

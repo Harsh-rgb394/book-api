@@ -19,6 +19,9 @@ const Regsiter = () => {
       [e.target.name]: e.target.value,
     });
   };
+  const handledirect=()=>{
+    Navigate("/login");
+  }
 
   const handleSubmit = async() => {
     // Here you can send formData to the backend for registration processing
@@ -81,7 +84,8 @@ const Regsiter = () => {
             <option value="lender">Lender</option>
           </select>
         </div>
-      
+
+        <div className='flex flex-row justify-between'>
         <button
           type="button"
           onClick={handleSubmit}
@@ -89,6 +93,15 @@ const Regsiter = () => {
         >
           Sign Up
         </button>
+        <button
+          type="button"
+          onClick={handledirect}
+          className=" bg-green-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+        >
+          Sign In
+        </button>
+        </div>
+        
         {/* <Link
         
           // onClick={handleSubmit}
